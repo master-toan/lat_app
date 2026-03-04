@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Notes App version 1',
+      title: 'Notes App version 2 của tôi',
       debugShowCheckedModeBanner: false,
       home: BlocProvider(
         create: (_) => NotesBloc(
