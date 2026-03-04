@@ -23,11 +23,11 @@ class NoteModel {
 
   // NoteModel → Note
   Note toEntity() {
-    return Note(id: id, title: title, content: content);
+    return Note(id: id, titleContent: title, content: content);
   }
 
   // Note → NoteModel
   factory NoteModel.fromEntity(Note note) {
-    return NoteModel(id: note.id, title: note.title, content: note.content);
+    return NoteModel(id: note.id, title: note.titleContent, content: note.content);
   }
 }

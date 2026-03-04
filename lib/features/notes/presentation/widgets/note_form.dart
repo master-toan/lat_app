@@ -22,7 +22,7 @@ class _NoteFormState extends State<NoteForm> {
   @override
   void initState() {
     super.initState();
-    _titleController = TextEditingController(text: widget.note?.title ?? '');
+    _titleController = TextEditingController(text: widget.note?.titleContent ?? '');
     _contentController = TextEditingController(
       text: widget.note?.content ?? '',
     );
@@ -40,7 +40,7 @@ class _NoteFormState extends State<NoteForm> {
     if (_formKey.currentState!.validate()) {
       final note = Note(
         id: widget.note?.id,
-        title: _titleController.text,
+        titleContent: _titleController.text,
         content: _contentController.text,
       );
 

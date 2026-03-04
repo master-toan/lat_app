@@ -43,7 +43,7 @@ class NoteItem extends StatelessWidget {
     return Card.outlined(
       margin: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
       child: ListTile(
-        title: Text(note.title, style: TextStyle(fontWeight: FontWeight.bold)),
+        title: Text(note.titleContent, style: TextStyle(fontWeight: FontWeight.bold)),
         subtitle: Text(
           note.content,
           maxLines: 2,

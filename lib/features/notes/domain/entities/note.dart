@@ -1,7 +1,7 @@
 class Note {
   final int? id;
-  final String title;
+  final String titleContent;
   final String content;
 
-  Note({this.id, required this.title, required this.content});
+  Note({this.id, required this.titleContent, required this.content});
 }
