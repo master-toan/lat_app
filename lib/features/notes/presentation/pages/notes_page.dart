@@ -21,6 +21,7 @@ class _NotesPageState extends State<NotesPage> {
           title: Text('Add Note', textAlign: TextAlign.center),
           titleTextStyle: TextStyle(
             fontWeight: FontWeight.bold,
+            fontStyle: FontStyle.italic,
             fontSize: 20,
             color: Colors.black,
           ),
