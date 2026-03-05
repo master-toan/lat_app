@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Notes App version 2 của tôi',
-      debugShowCheckedModeBanner: false,
+    
       home: BlocProvider(
         create: (_) => NotesBloc(
           getNotes: GetNotesUseCase(repository),
